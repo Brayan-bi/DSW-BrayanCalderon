@@ -1,0 +1,129 @@
+body{
+    background:white;
+    color: black;
+    margin: auto;
+    
+}
+header{
+    background:white;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width:600px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    article{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    aside{flex-direction: column;
+        align-items: flex-start;}
+    footer{
+        flex-direction: column;
+        align-items: flex-start;}
+}
+
+h1 {
+    font-size: 30pt;
+    text-align: center;
+    font-weight: bold;
+    color:black;
+}
+nav{
+    font-weight: bold;
+    width: 100%;
+    font-size: 14pt;
+    height: 50px;
+    background:white;
+    color:rgb(8, 183, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav> {
+    display:none;
+    position: absolute;
+    min-width: 140px;
+}
+ul, ol{
+    list-style: none;
+}
+nav> ul li {
+    float: left;
+}
+nav a{
+    
+    text-decoration: none;
+    color: inherit;
+    padding: 15px 20px;
+    transition: ease 1s;
+    display: block;
+}
+nav a:hover{
+background: cyan;
+color: black;
+}
+nav li ul{
+    display:none;
+    position: absolute;
+    min-width: 140px;
+}
+nav li:hover > ul{
+    display: block;
+}
+nav li ul li{
+    position: relative;
+}
+article{
+    text-align: left;
+    width: 80%;
+    padding: 0px 100px;
+}
+h2 {
+    font-size: 20pt;
+    text-align: center;
+    color:black;
+
+}
+section{
+    font-size: 16pt;
+    width: 70%;
+    color:black;
+    float: left;
+}
+h3 {
+    text-align: center;
+    font-size: 5pt;
+}
+h4 {
+    text-align: center;    
+}
+aside{
+    font-size: 14pt;
+    width: 30%;
+    color:cyan;
+    float: left;
+    
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    font-size: 14pt;
+    text-align: center;
+   
+}
+.contenedor::after{
+    content: "";
+    display: block;
+    clear: both;
+}
